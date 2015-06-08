@@ -1,0 +1,57 @@
+@0
+
+
+@1
+S:MOV UP, ACC
+  NEG
+  SUB 1
+  MOV ACC, DOWN
+
+@2
+MOV UP, DOWN
+
+@3
+
+
+@4
+MOV UP, ACC
+MOV ACC, RIGHT
+MOV ACC, DOWN
+
+@5
+S:MOV UP, ACC
+  JMP R
+
+  MOV ACC, DOWN #9
+  MOV ACC, DOWN #8
+  MOV ACC, DOWN #7
+  MOV ACC, DOWN #6
+  MOV ACC, DOWN #5
+  MOV ACC, DOWN #4
+  MOV ACC, DOWN #3
+  MOV ACC, DOWN #2
+  MOV ACC, DOWN #1
+  JMP S
+R: JRO LEFT
+
+@6
+MOV UP, RIGHT
+
+@7
+  MOV 0, ACC
+  JMP R
+  ADD UP #9
+  ADD UP #8
+  ADD UP #7
+  ADD UP #6
+  ADD UP #5
+  ADD UP #4
+  ADD UP #3
+  ADD UP #2
+  ADD UP #1
+  JMP E
+R: JRO LEFT
+E:MOV ACC, DOWN
+
+@8
+
