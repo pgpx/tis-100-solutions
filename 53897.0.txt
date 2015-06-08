@@ -34,7 +34,6 @@ L:SWP
 
 
 @8
-S:MOV 1, ACC #
 V:MOV UP, ACC #CNT
 L:SWP  #X
   MOV ACC, RIGHT
@@ -44,7 +43,6 @@ L:SWP  #X
   SWP #X
   ADD 1
   SAV
-  JMP V
 
 @9
 MOV LEFT, DOWN
