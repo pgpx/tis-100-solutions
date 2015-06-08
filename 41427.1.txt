@@ -43,18 +43,18 @@ C:MOV UP, DOWN
 
 @6
 # >3XVAL
+E:SWP
 S:SAV
   SUB UP
   JLZ N
   MOV UP, ACC
-  JNZ C
+  JNZ E
   SWP
   MOV ACC, DOWN
   MOV 0, ACC
   JMP S
 N:MOV UP, ACC
   JMP S
-C:SWP
 
 @7
 
