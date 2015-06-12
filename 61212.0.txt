@@ -1,7 +1,5 @@
 @0
-#REM
-#B
-#CMP
+
 
 @1
 MOV UP, ACC #A
@@ -17,18 +15,7 @@ MOV LEFT, DOWN#A
 MOV ACC, DOWN #-B
 
 @3
-S:MOV UP, ACC #B
-  MOV ACC,LEFT
-  MOV ACC,LEFT
-  MOV UP, ACC #A
-  SAV
-  MOV 0, ACC
-  SWP
-L:SUB LEFT
-  JLZ F
-  MOV 4, DOWN
-  JMP S
-F:MOV 1, DOWN
+
 
 @4
 S:MOV UP, LEFT #A
